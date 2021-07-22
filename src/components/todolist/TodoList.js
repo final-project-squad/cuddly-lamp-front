@@ -10,7 +10,7 @@ function TodoList(props) {
 
   useEffect(() => {
     getTodoList();
-  }, []);
+  });
 
   const getTodoList = async () => {
     

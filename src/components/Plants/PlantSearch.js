@@ -5,8 +5,6 @@ import Plant from "./Plant";
 import Footer from "../footer/footer";
 
 const FetchPlants = ({ user }) => {
-  const allPlants = "all";
-  const [page, setPage] = useState();
   const [plantjson, setPlantJson] = useState([]);
   const [name, setName] = useState();
   const [maintenance, setMaintenance] = useState();
@@ -146,7 +144,6 @@ const FetchPlants = ({ user }) => {
             />
           );
         })}
-        {page === allPlants}
       </div>
 
       <Footer />

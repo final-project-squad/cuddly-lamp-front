@@ -137,7 +137,7 @@ function About() {
             <circle className="st1" cx="259.55" cy="65.41" r="9.9" />
           </svg>
         </div>
-        <div className="leaves" className="middletext">
+        <div className="leaves middletext">
           <p>
             We want to see the major cities turn green, whether that be on
             balconies, rooftops or windowsils.
