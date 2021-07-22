@@ -209,3 +209,14 @@
 .scroll-note p::-webkit-scrollbar-thumb:hover {
   background: #888d68;
 }
+
+.todo-button button {
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: rgb(223, 226, 203);
+  border: 1px solid #888d68;
+  color: #5f6343;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}

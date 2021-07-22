@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TodoForm from "./TodoForm";
-import { FiEdit } from "react-icons/fi";
+/* import { FiEdit } from "react-icons/fi"; */
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
@@ -36,10 +36,10 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
                 onClick={() => removeTodo(todo.id)}
                 className='delete-icon'
                 />
-                <FiEdit 
+                {/* <FiEdit 
                 onClick={() => setEdit({id: todo.id, value: todo.text})}
                 className='edit-icon'
-                />
+                /> */}
             </div>
         </div> 
     </div>

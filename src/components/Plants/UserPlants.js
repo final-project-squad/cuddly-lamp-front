@@ -27,14 +27,18 @@ function UserPlants(props) {
 
   return (
     <div>
-      <div >
-        <button onClick={openTaskManager}>View All</button>{" "}
+
+      <div className="todo-button">
+        <button onClick={openTaskManager}>My Plant Planner</button>{" "}
       </div>
-    <div className="searchComponents">
-      {plants.map((item, index) => {
+
+      <div className="searchComponents">
+        {plants.map((item, index) => {
         return <Plant item={item} index={index} key={index} user= {props.user} addRemove="remove" setPlants={setPlants}/>;
       })}
-    </div></div>
+      </div>
+
+    </div>
   );
 }
 

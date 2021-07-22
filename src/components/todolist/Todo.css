@@ -62,11 +62,6 @@
 
 .delete-icon {
     margin-left: 10px;
-    margin-right: 10px;
-}
-
-.delete-icon,
-.edit-icon {
     cursor: pointer;
     margin-bottom: -30px;
 }
