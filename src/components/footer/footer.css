@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap');
+
+.footer {
+    position: relative;
+}
+.footer-svg {
+    padding-bottom: 75px;
+}
+.footer-names {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 2px;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+    color:#888d68;
+    border-bottom: solid #888d68;
+    border-top: solid #888d68;
+}
+
+.footer-names a {
+    font-weight: bold;
+}
+
+.footer-names a:hover {
+    color: rgb(26, 170, 127);
+    border-bottom: 1px dotted rgb(26, 170, 127);
+}
+
+.st0 {
+    position: absolute;
+    fill:none;
+    stroke:#BAC284;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: dash 4s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
