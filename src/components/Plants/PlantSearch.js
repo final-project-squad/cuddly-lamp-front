@@ -35,7 +35,7 @@ const FetchPlants = ({ user }) => {
     listForSearch = listForSearch.replace(/,\s*$/, "");
     listForSearch += "}";
 
-    const response = await fetch("http://localhost:5000/plant/search", {
+    const response = await fetch("https://cuddly-lamp-back.herokuapp.com/plant/search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: listForSearch,
@@ -45,7 +45,7 @@ const FetchPlants = ({ user }) => {
   };
 
   const renderAll = async () => {
-    const response = await fetch("http://localhost:5000/plant");
+    const response = await fetch("https://cuddly-lamp-back.herokuapp.com/plant");
     const data = await response.json();
     setPlantJson(data);
   };

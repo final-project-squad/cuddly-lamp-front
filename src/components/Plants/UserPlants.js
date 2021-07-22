@@ -9,7 +9,7 @@ function UserPlants(props) {
   }, [props]);
 
   const getPlants = async (name) => {
-    let response = await fetch("http://localhost:5000/user/usersPlants", {
+    let response = await fetch("https://cuddly-lamp-back.herokuapp.com/user/usersPlants", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

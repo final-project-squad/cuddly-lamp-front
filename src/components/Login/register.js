@@ -5,7 +5,7 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 const Register = (props) => {
 
   const fetchLogin = async (name, email, password, userAdmin) => {
-    const response = await fetch("http://localhost:5000/user", {
+    const response = await fetch("https://cuddly-lamp-back.herokuapp.com/user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

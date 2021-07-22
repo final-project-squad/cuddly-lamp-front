@@ -14,7 +14,7 @@ function TodoList(props) {
 
   const getTodoList = async () => {
     
-    const response = await fetch("http://localhost:5000/user/gettodo", {
+    const response = await fetch("https://cuddly-lamp-back.herokuapp.com/user/gettodo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -37,7 +37,7 @@ function TodoList(props) {
       return;
     }
 
-    const response = await fetch("http://localhost:5000/user/addtodo", {
+    const response = await fetch("https://cuddly-lamp-back.herokuapp.com/user/addtodo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -65,7 +65,7 @@ function TodoList(props) {
 
   const removeTodo = async (id) => {
 
-    await fetch("http://localhost:5000/user/removetodo", {
+    await fetch("https://cuddly-lamp-back.herokuapp.com/user/removetodo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

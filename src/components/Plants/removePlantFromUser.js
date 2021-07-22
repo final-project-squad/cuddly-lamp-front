@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function RemovePlantFromUser(props) {
   const removePlantFromUser = async (name, plant) => {
     try {
-      let response = await fetch("http://localhost:5000/user/removeplant", {
+      let response = await fetch("https://cuddly-lamp-back.herokuapp.com/user/removeplant", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

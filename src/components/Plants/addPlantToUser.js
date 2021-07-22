@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function AddPlantToUser(props) {
   const addPlantToUser = async (name, plant) => {
     try {
-      await fetch("http://localhost:5000/user/addplant", {
+      await fetch("https://cuddly-lamp-back.herokuapp.com/user/addplant", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

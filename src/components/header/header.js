@@ -103,7 +103,7 @@ const Header = () => {
   const populate = async () => {
     if (window.confirm("Are you sure you want to log out?") === true) {
       try {
-        await fetch("http://localhost:5000/populate");
+        await fetch("https://cuddly-lamp-back.herokuapp.com/populate");
       } catch (error) {}
     }
   };

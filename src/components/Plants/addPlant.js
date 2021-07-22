@@ -31,7 +31,7 @@ const AddPlant = () => {
     indoor,
     notes
   ) => {
-    const response = await fetch("http://localhost:5000/plant", {
+    const response = await fetch("https://cuddly-lamp-back.herokuapp.com/plant", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
