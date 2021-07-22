@@ -8,7 +8,7 @@ import AddPlant from "../Plants/addPlant";
 import About from "../about/About";
 import FetchPlants from "../Plants/PlantSearch";
 import UserPlants from "../Plants/UserPlants";
-import TodoList from"../todolist/TodoList";
+import TodoList from "../todolist/TodoList";
 
 const Header = () => {
   const [user, setUser] = useState("");
@@ -43,7 +43,7 @@ const Header = () => {
       localStorage.removeItem("MyToken");
       setUser();
       setUserAdmin(false);
-      renderMain();
+      navigatePage(aboutPage);
     } else {
     }
   };
@@ -104,7 +104,7 @@ const Header = () => {
     if (window.confirm("Are you sure you want to log out?") === true) {
       try {
         await fetch("https://cuddly-lamp-back.herokuapp.com/populate");
-      } catch (error) {}
+      } catch (error) { }
     }
   };
 
@@ -146,11 +146,11 @@ const Header = () => {
       />
     );
   };
-  const renderTask = () =>{
+  const renderTask = () => {
     return (
       <TodoList
-      setShowTask={setShowTask}
-      username={user}
+        setShowTask={setShowTask}
+        username={user}
       />
     )
   }
@@ -183,7 +183,7 @@ const Header = () => {
             <div className="nabvar-links">
               <Router>
                 {showPopulate()}
-        
+
                 {/* {task()} */}
 
                 <div
