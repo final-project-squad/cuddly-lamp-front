@@ -122,7 +122,6 @@ io9
   return (
 
     <div className="headerTotal">
-    <div>
       <div className={"header"}>
         <div className={"menu"}>
           <div className={"navbar"}>
